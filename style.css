@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+    z-index: 999;
+}
+
+.header .main .navbar {
+    padding-top: 30px;
+}
+
+.main {
+    background-image: url("asset/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100%;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav button {
+    margin: 0 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.main .container {
+    max-width: 90vw;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    gap: 15px;
+    color: white;
+}
+
+.main .container h1 {
+    font-weight: 800;
+}
+
+.main .container p {
+    font-size: 140%;
+    margin-bottom: 5px;
+}
+
+.main .container .get-started input {
+    background-color: rgba(128, 128, 128, 0.4);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 40%;
+    height: 60px;
+    margin: 10px;
+}
+
+.main .container .get-started button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    height: 60px;
+}
+
+.dropdown {
+    display: none;
+}
+
+/* section 1 styling  */
+section.section1 .box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: black;
+    margin-top: 8px;
+    color: white;
+}
+
+section.section1 .box:nth-child(even) {
+    flex-direction: row-reverse;
+
+}
+
+section.section1 .box:nth-child(odd) {
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+section.section1 .box .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+    text-align: center;
+    width: 30%;
+    height: auto;
+
+}
+
+section.section1 .box .image {
+    position: relative;
+}
+
+section.section1 .box .tv-video video {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+section.section1 .box .image img {
+    width: 450px;
+}
+
+section.section1 .box .image .download-box {
+    width: 230px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: black;
+    position: absolute;
+    top: 220px;
+    left: 105px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+section.section1 .box .image .download-box img {
+    width: 60px;
+}
+
+section.section1 .box .image .download-box h1 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.section1 .box .image .download-box p {
+    color: blue;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.section1 .box h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+
+section.section1 .box p {
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .header .main {
+        padding-top: 10px;
+    }
+
+    .main .container h1 {
+        font-size: 5vw;
+    }
+
+    .main .container p {
+        font-size: 14px;
+    }
+
+    .main .container .get-started input {
+        height: 15%;
+        width: 80%;
+    }
+
+    .main .container .get-started button {
+        height: 15%;
+        width: 80%;
+        font-size: 80%;
+    }
+
+    .main .container {
+        top: -50px;
+
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .navbar nav button {
+        display: none;
+    }
+
+    section.section1 .box {
+        gap: 10px;
+    }
+
+    section.section1 .box .text {
+        width: 100%;
+        padding-top: 40px;
+        padding-left: 40px;
+        height: auto;
+    }
+
+    section.section1 .box .text h1 {
+        font-size: 23px;
+    }
+
+    section.section1 .box .text p {
+        font-size: 14px;
+    }
+
+    section.section1 .box .image img {
+
+        width: 90%;
+    }
+
+    section.section1 .box .image .download-box {
+        width: 40%;
+        height: 15%;
+        gap: 5px;
+        top: 180px;
+        border: 1px solid grey;
+    }
+
+    section.section1 .box .image .download-box img {
+        width: 20%;
+        border-radius: 5px;
+    }
+
+    section.section1 .box .image .download-box h1 {
+        font-size: 11px;
+        padding-top: 10px;
+    }
+
+    section.section1 .box .image .download-box p {
+        font-size: 10px;
+    }
+}

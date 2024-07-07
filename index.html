@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="main">
+            <nav class="navbar navbar-expand-lg mx-5">
+                <div class="container-fluid">
+                    <span class="navbar-brand"><img src="asset/logo.svg" alt=""
+                            style="width: 140px;z-index: 999;"></span>
+                    <div class="d-none d-md-flex ms-auto sign-up-buttons">
+                        <button class="btn btn-outline-light me-2 text-light"
+                            style="z-index: 999; background-color: red; border: none;">English</button>
+                        <button class="btn btn-outline-light"
+                            style="z-index: 999; background-color: red; border: none;">Sign
+                            In</button>
+                    </div>
+
+                    <div class="dropdown" style="z-index: 999;">
+                        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="background-color: red;">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Sign In</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="box"></div>
+
+            <div class="container text-center text-white d-flex flex-column justify-content-center h-100">
+                <h1>Unlimited movies, TV shows, and more</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+
+                <div class="get-started">
+                    <p> Ready to watch? Enter your email to create or restart your membership.</p>
+
+                    <div
+                        class="email-container d-flex justify-content-center align-items-center flex-wrap flex-md-row flex-column w-100">
+                        <input type="email" placeholder="Email Address"
+                            class="form-control text-light mx-3 mb-2 mb-md-0">
+                        <button class="btn text-light my-2" style="background-color: red;">Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ----------------------- -->
+
+    <section class="section1">
+
+        <div class="box box1 row h-50 w-100">
+            <div class="text col-md-6 col-12">
+                <h1>Enjoy on your TV</h1>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+            <div class="image tv-video col-md-6 col-12 p-5">
+                <video src="asset/videos/video-tv-0819.m4v" autoplay loop></video>
+                <!-- <img src="asset/images/tv (1).png" alt=""> -->
+            </div>
+        </div>
+
+        <div class="box box2 row  h-50 w-100">
+            <div class="text  col-md-6 col-12">
+                <h1>Download your shows to watch offline</h1>
+                <p>Save your favorites easily and always have something to watch.</p>
+            </div>
+            <div class="image col-md-6 col-12 p-5">
+                <img src="asset/images/mobile-0819.jpg" alt="">
+                <div class="download-box">
+                    <img src="asset/images/boxshot.png" alt="">
+                    <div class="download-box-text">
+                        <h1>Stranger Things</h1>
+                        <p>Downloading...</p>
+                    </div>
+                    <div class="download-animation"></div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box box3 row  h-50 w-100">
+            <div class="text col-md-6 col-12">
+                <h1>Watch everywhere</h1>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="image col-md-6 col-12 p-5">
+                <div>
+                    <img src="https://techcrunch.com/wp-content/uploads/2017/04/netflix-tv-mockup.jpg?w=1024"
+                        class="d-block img-fluid" style="z-index: -10;">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box box4 row  h-50 w-100">
+            <div class="text  col-md-6 col-12 ">
+                <h1>Create profiles for kids</h1>
+                <p>Send kids on adventures with their favorite characters in a space made just for them—free with your
+                    membership.</p>
+            </div>
+            <div class="image col-md-6 col-12 p-5">
+                <img src="asset/images/cartoon.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
